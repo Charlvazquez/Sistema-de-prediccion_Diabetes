@@ -1,0 +1,50 @@
+{% load static %}
+{% include 'base.html' %} 
+<title>Home</title>
+    <style type="text/css">
+    div{
+        color: white;
+    }
+    h1{
+        color: white;
+        font-size: 60px;
+        font-family: Arial, Helvetica, sans-serif;
+        font-weight: bold;
+        margin-top: 200px;
+    }
+    h2{
+            color: 'white';
+            font-family: arial, sans-serif;
+            font-size: 35px;
+            font-weight: bold;
+            margin-top: 200px;
+        }
+        body{
+            background: #007991;  /* fallback for old browsers */
+            background: -webkit-linear-gradient(to right, #78ffd6, #007991);  /* Chrome 10-25, Safari 5.1-6 */
+            background: linear-gradient(to right, #78ffd6, #007991); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+          
+        }
+    input[type=submit]{
+        background-color:springgreen;
+        border: 2px;
+        color: white;
+        padding: 16px 32px;
+        cursor: pointer;
+        margin-top: 15px;
+
+
+    }    
+    </style>
+{% block content %}
+    <div align ='center'>
+        <h1>
+            Bienvenido al Sistema de prediccion de Diabetes
+        </h1>   
+        <form action="prediccion"> 
+            <input type="submit" value="Vamos a comenzar">
+
+        </form>
+    </div>
+{% endblock content %} 
+

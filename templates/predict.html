@@ -1,0 +1,73 @@
+{% load static %}
+{% include 'base.html' %} 
+    <title>Prediccion</title>
+    <style>
+        body{
+            background: #3494E6;  /* fallback for old browsers */
+            background: -webkit-linear-gradient(to right, #EC6EAD, #3494E6);  /* Chrome 10-25, Safari 5.1-6 */
+            background: linear-gradient(to right, #EC6EAD, #3494E6); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+        }
+       .main{
+            position: fixed;
+            top: 60px;
+            left: 400px;
+            width: 500px;
+            background-color:#ffffff;
+            border-radius: 10px;
+            align-items: center;
+            padding: 5%;
+        }
+        h2{
+            color: #0086b3;
+            font-size: 20px;
+            font-weight: bold;
+        }
+    </style>
+{% block content %}
+        <div class="main">
+           <div class="d-flex justify-content-center">
+                <h2>Por favor Sigue la informacion:</h2>
+           </div>
+            <form action="resultado">
+                <table>
+                    <tr>
+                        <td align="right">Gestaciones:</td>
+                        <td align="left"><input type="text" name="n1"></td>
+                    </tr>
+                    <tr>
+                        <td align="right">Glucosa:</td>
+                        <td align="left"><input type="text" name="n2"></td>
+                    </tr>
+                    <tr>
+                        <td align="right">Presion sanguinea:</td>
+                        <td align="left"><input type="text" name="n3"></td>
+                    </tr>
+                    <tr>
+                        <td align="right">Densidad de la piel:</td>
+                        <td align="left"><input type="text" name="n4"></td>
+                    </tr>
+                    <tr>
+                        <td align="right">Insulina:</td>
+                        <td align="left"><input type="text" name="n5"></td>
+                    </tr>
+                    <tr>
+                        <td align="right">Indice de Masa Corporal:</td>
+                        <td align="left"><input type="text" name="n6"></td>
+                    </tr>
+                    <tr>
+                        <td align="right">Funcion para Diabetes:</td>
+                        <td align="left"><input type="text" name="n7"></td>
+                    </tr>
+                    <tr>
+                        <td align="right">Edad:</td>
+                        <td align="left"><input type="text" name="n8"></td>
+                    </tr>
+                </table>
+                <div class="d-flex justify-content-center ">  
+                    <button type="submit" class="btn btn-primary mt-3" style="font-family: 'Mukta', sans-serif; " >Enviar</button>
+                  </div>
+            </form>
+            Resultado:{{resultado2}}
+        </div>
+{% endblock content %}

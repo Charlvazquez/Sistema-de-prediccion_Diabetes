@@ -1,0 +1,9 @@
+info:
+
+1.-you need to download the dataset in your pc and change the root in views.py
+2.- the code for predictions of the model are in the result view in views.py 
+3.- if you can add de diabetes.csv in the admin panel do it, i share this basic web system for everyone uses
+if you want to make any changes you can do it.
+4. and finally all the documentation in the code is my native language 'spanish'. 
+If you are a spanish speaker would be easier for you to understand it but if you speak other language use the translator
+as you wish to understand the info.
